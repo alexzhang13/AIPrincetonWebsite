@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+a {
+    color: unset;
+    text-decoration: none;
+}
+
+body {
+    background: var(--color-bg);
+}
+
+.gradient__bg {
+
+    /* ff 3.6+ */
+    background: -moz-radial-gradient(circle at 0% 47%, rgba(33, 19, 60, 1) 0%, rgba(15, 64, 70, 1) 38%, rgba(46, 11, 46, 1) 100%);
+
+    /* safari 5.1+,chrome 10+ */
+    background: -webkit-radial-gradient(circle at 0% 47%, rgba(33, 19, 60, 1) 0%, rgba(15, 64, 70, 1) 38%, rgba(46, 11, 46, 1) 100%);
+
+    /* opera 11.10+ */
+    background: -o-radial-gradient(circle at 0% 47%, rgba(33, 19, 60, 1) 0%, rgba(15, 64, 70, 1) 38%, rgba(46, 11, 46, 1) 100%);
+
+    /* ie 10+ */
+    background: -ms-radial-gradient(circle at 0% 47%, rgba(33, 19, 60, 1) 0%, rgba(15, 64, 70, 1) 38%, rgba(46, 11, 46, 1) 100%);
+
+    /* global 92%+ browsers support */
+    background: radial-gradient(circle at 0% 47%, rgba(33, 19, 60, 1) 0%, rgba(15, 64, 70, 1) 38%, rgba(46, 11, 46, 1) 100%);
+
+}
+
+.gradient__text {
+    background: var(--gradient-text);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gradient__text2 {
+    background: var(--gradient-text2);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.section__padding {
+    padding: 4rem 6rem;
+}
+
+.section__margin {
+    margin: 4rem 6rem;
+}
+
+/* -=-=-=-=-=-=-=- Animations -=-=-=-=-=-=-=- */
+.scale-up-center {
+    -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes scale-up-center {
+    0% {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes scale-up-center {
+    0% {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+/* Section for mobile and smaller screens */
+
+@media screen and (max-width: 700px) {
+    .section__padding {
+        padding: 4rem;
+    }
+
+    .section__margin {
+        margin: 4rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .section__padding {
+        padding: 4rem 2rem;
+    }
+
+    .section__margin {
+        margin: 4rem 2rem;
+    }
+}
