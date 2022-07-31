@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
 
 import './App.css'
-import { About, Blog, Features, Footer, Header, Possibility } from './containers'
+import { About, Header } from './containers'
 import { Cta, Navbar } from './components'
 
 const App = () => {

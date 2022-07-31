@@ -16,10 +16,10 @@ const Header = () => {
         <p> Our aim is to create a place to expose Princeton undergrads to the state of the art of AI research in an accessible way. We hope that this website will serve as a central hub for announcements and resources that our club members are working hard to put out for anyone interested in doing AI at Princeton! </p>
         <p></p>
         <div className='header__socials'>
-          <a href="https://twitter.com" target="_blank"><BsTwitter size={40} /></a>
-          <a href="https://github.com" target="_blank"><FaGithub size={40} /></a>
-          <a href="https://facebook.com" target="_blank"><BsFacebook size={40} /></a>
-          <a href="https://listserv.com" target="_blank">< MdEmail size={40} /></a>
+          <a href="https://twitter.com" rel="noopener noreferrer"><BsTwitter size={40} /></a>
+          <a href="https://github.com" rel="noopener noreferrer"><FaGithub size={40} /></a>
+          <a href="https://facebook.com" rel="noopener noreferrer"><BsFacebook size={40} /></a>
+          <a href="https://listserv.com" rel="noopener noreferrer">< MdEmail size={40} /></a>
         </div>
       </div>
       <div className='site__header-image'>
