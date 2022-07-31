@@ -6,17 +6,24 @@ import './navbar.css'
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
+  const header = [
+    {
+      content: ['<p> AI<span style="color: #ff0;">@</span><span style="color: #f1883d;">PRINCETON</span> </p>']
+    }
+  ];
 
   return (
     <><div className='site__navbar'>
       <div className='site__navbar-links'>
         <div className='site__navbar-links_logo'>
-         <p className=""> AI@PRINCETON </p>
+          {header[0].content.map(paragraph =>
+            (<p dangerouslySetInnerHTML={{ __html: paragraph }} />)
+          )}
         </div>
         <div className='site__navbar-links_container'>
           <p><a href="#home"> Home </a></p>
           <p><a href="#about"> About </a></p>
-          <p><a href="#blog"> Blog </a></p>
+          <p><a href="#join"> Join </a></p>
           <p><a href="#resources"> Resources </a></p>
         </div>
       </div>
@@ -29,7 +36,7 @@ const Navbar = () => {
             <div className="site__navbar-menu_container-links">
               <p><a href="#home"> Home </a></p>
               <p><a href="#about"> About </a></p>
-              <p><a href="#blog"> Blog </a></p>
+              <p><a href="#join"> Join </a></p>
               <p><a href="#resources"> Resources </a></p>
             </div>
           </div>
