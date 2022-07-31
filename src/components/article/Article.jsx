@@ -5,7 +5,7 @@ const Article = ({ imgUrl }) => {
   return (
     <div className="site__blog-container_article">
       <div className="site__blog-container_article-img">
-        <img src={imgUrl} alt="article image"> </img>
+        <img src={imgUrl}> </img>
       </div>
     </div>
   )
