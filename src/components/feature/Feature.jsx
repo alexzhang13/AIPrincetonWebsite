@@ -1,7 +1,7 @@
 import React from 'react'
 import './feature.css'
 
-const Feature = ( {title, text}) => {
+const Feature = ({ title, text }) => {
   return (
     <div className="site__features-container__feature">
       <div className="site__features-container__feature-title">

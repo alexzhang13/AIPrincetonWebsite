@@ -2,16 +2,23 @@ import React from 'react'
 import { BsTwitter, BsFacebook } from 'react-icons/bs'
 import { FaGithub } from 'react-icons/fa'
 import { MdEmail } from 'react-icons/md'
+import { MovingComponent } from 'react-moving-text'
 
 import './header.css'
 import ai from '../../assets/dalle1.png'
 
 const Header = () => {
   return (
-    <div className='site__header section__padding'> 
+    <div className='site__header section__padding'>
       <div className='site__header-content'>
-        <h1 className='gradient__text'> AI @ Princeton </h1>
-        <p className="">Welcome! AI @ Princeton is an undergraduate organization at Princeton University dedicated to AI! </p>
+        <h1 className='gradient__text'>
+          <MovingComponent type="typewriter"
+            dataText={[
+              'Welcome to',
+              'AI @ Princeton!'
+            ]} />
+        </h1>
+        <p className="">AI @ Princeton is an undergraduate organization at Princeton University dedicated to AI! </p>
         <p></p>
         <p> Our aim is to create a place to expose Princeton undergrads to the state of the art of AI research in an accessible way. We hope that this website will serve as a central hub for announcements and resources that our club members are working hard to put out for anyone interested in doing AI at Princeton! </p>
         <p></p>

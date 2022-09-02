@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 
 import './navbar.css'
@@ -22,8 +22,9 @@ const Navbar = () => {
         <div className='site__navbar-links_container'>
           <p><a href="#home"> Home </a></p>
           <p><a href="#about"> About </a></p>
+          <p><a href="#next"> Our Plans </a></p>
+          <p><a href="#timeline"> Timeline </a></p>
           <p><a href="#join"> Join </a></p>
-          <p><a href="#resources"> Resources </a></p>
         </div>
       </div>
     </div><div className='site__navbar-menu'>
@@ -35,8 +36,9 @@ const Navbar = () => {
             <div className="site__navbar-menu_container-links">
               <p><a href="#home"> Home </a></p>
               <p><a href="#about"> About </a></p>
+              <p><a href="#next"> Our Plans </a></p>
+              <p><a href="#timeline"> Timeline </a></p>
               <p><a href="#join"> Join </a></p>
-              <p><a href="#resources"> Resources </a></p>
             </div>
           </div>
         )}

@@ -22,7 +22,7 @@
     min-width: 210px;
     line-height: 30px;
     letter-spacing: -0.04em;
-    color: #fff;    
+    color: #fff;
 }
 
 .site__features-container__feature-title div {
@@ -42,7 +42,7 @@
 .site__features-container_feature-text p {
     font-family: var(--font-family);
     font-weight: 500;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 24px;
     color: var(--color-text);
 }

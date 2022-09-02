@@ -1,7 +1,7 @@
-import React, {useState, useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 
 import './App.css'
-import { About, Header } from './containers'
+import { About, Header, Timeline, Next } from './containers'
 import { Cta, Navbar } from './components'
 
 const App = () => {
@@ -20,16 +20,19 @@ const App = () => {
           <div className="spinner"></div>
         </div>
       ) : (
-      <div className="App">
-        <div className="gradient__bg">
-          <Navbar />
-          <Header />
+        <div className="App">
+          <div className="gradient__bg">
+            <Navbar />
+            <Header />
+          </div>
+          <About />
+          <Next />
+          <Timeline />
+          <Cta />
         </div>
-        <About />
-        <Cta />
-      </div>
       )}
     </div>
+
   )
 }
 
