@@ -35,6 +35,13 @@ const items = [
         cardDetailedText: "We are hosting our first kickoff event for the Fall 2022 semester! We will talk about our goals for this year, invite a professor in AI to speak, and bring refreshments. Hope to see you all there!"
     },
     {
+        title: "September 13, 2022",
+        cardTitle: "Fall 2022 Kickoff Event!",
+        cardSubtitle:
+            "Welcome everyone to AI@Princeton!",
+        cardDetailedText: "We are hosting our first kickoff event for the Fall 2022 semester! We will talk about our goals for this year, invite a professor in AI to speak, and bring refreshments. Hope to see you all there!"
+    },
+    {
         title: "Spring, 2023",
         cardTitle: "AI Tiger Trek",
         cardSubtitle:
