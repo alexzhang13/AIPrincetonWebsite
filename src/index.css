@@ -3,14 +3,14 @@
 :root {
     --font-family: 'Manrope', sans-serif;
 
-    --gradient-text: linear-gradient(90deg, rgba(3, 169, 244, 1) 0%, rgba(33, 150, 243, 1) 2%, rgba(139, 192, 74, 1) 50%, rgba(255, 193, 7, 1) 100%);
-    --gradient-text2: linear-gradient(90deg, rgba(3, 169, 244, 1) 0%, rgba(33, 150, 243, 1) 2%, rgba(139, 192, 74, 1) 50%, rgba(255, 193, 7, 1) 100%);
-    --gradient-text-timeline: linear-gradient(90deg, rgba(3, 169, 244, 1) 0%, rgba(33, 150, 243, 1) 2%, rgba(139, 192, 74, 1) 50%, rgba(255, 193, 7, 1) 100%);
-    --gradient-bar: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%);
+    --gradient-text: linear-gradient(90deg, rgb(79, 244, 3) 0%, rgb(20, 212, 30) 2%, rgba(139, 192, 74, 1) 50%, rgba(255, 193, 7, 1) 100%);
+    --gradient-text2: linear-gradient(90deg, rgb(23, 244, 3) 0%, rgb(82, 243, 33) 2%, rgba(139, 192, 74, 1) 50%, rgba(255, 193, 7, 1) 100%);
+    --gradient-text-timeline: linear-gradient(90deg, rgb(3, 244, 7) 0%, rgb(33, 243, 51) 2%, rgba(139, 192, 74, 1) 50%, rgba(255, 193, 7, 1) 100%);
+    --gradient-bar: linear-gradient(103.22deg, #7ffa67 -13.86%, #70f467 99.55%);
 
-    --color-bg: #040C18;
-    --color-footer: #031B34;
-    --color-blog: #042c54;
-    --color-text: #81AFDD;
-    --color-subtext: #FF8A71;
+    --color-bg: #4ce007;
+    --color-footer: #75e811;
+    --color-blog: #16d729;
+    --color-text: #0fe516;
+    --color-subtext: #a3ff71;
 }
