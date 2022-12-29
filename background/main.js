@@ -1,6 +1,6 @@
 //Steps to run:
 //1. Install node.js, npm, vite.js, and gsap
-//2. npm run dev in terminal
+//2. In terminal, enter npm run dev
 
 //imports
 import * as THREE from 
