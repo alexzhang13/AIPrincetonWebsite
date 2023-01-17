@@ -83,6 +83,7 @@ const mouse = {
 document.body.appendChild(renderer.domElement)
 const controls = new OrbitControls(camera, renderer.domElement)
 controls.enableZoom = true
+//controls.enableRotate = false
 
 /*
 controls.listenToKeyEvents(document.body)
@@ -116,7 +117,7 @@ const backLight = new THREE.DirectionalLight(0xffffff, 1)
 let frame = 0
 function animate() {
   requestAnimationFrame(animate)
-  renderer.render(scene, camera)
+  renderer.render(scene, camera) 
   raycaster.setFromCamera(mouse, camera)
 
   frame += 0.01
@@ -168,7 +169,7 @@ function animate() {
       ggg: initialColor.g,
       bbb: initialColor.b,      
 
-      duration: 2,
+      duration: 30,
       onUpdate: () => {
         //vertice 1
         color.setX(intersects[0].face.a, hoverColor.r)
@@ -176,17 +177,17 @@ function animate() {
         color.setZ(intersects[0].face.a, hoverColor.b)
 
         //vertice 2
-        color.setX(intersects[0].face.b, hoverColor.r)
-        color.setY(intersects[0].face.b, hoverColor.g)
-        color.setZ(intersects[0].face.b, hoverColor.b)
+        color.setX(intersects[0].face.b, hoverColor.rr)
+        color.setY(intersects[0].face.b, hoverColor.gg)
+        color.setZ(intersects[0].face.b, hoverColor.bb)
 
         //vertice 3
-        color.setX(intersects[0].face.c, hoverColor.r)  
-        color.setY(intersects[0].face.c, hoverColor.g)
-        color.setZ(intersects[0].face.c, hoverColor.b)        
+        color.setX(intersects[0].face.c, hoverColor.rrr)  
+        color.setY(intersects[0].face.c, hoverColor.ggg)
+        color.setZ(intersects[0].face.c, hoverColor.bbb)        
       }
     })
-  }
+  } 
 }
 
 //Run Commands
@@ -201,6 +202,6 @@ camera.position.z = 50
 addEventListener('mousemove', (event) => {
   mouse.x = (2* (event.clientX / innerWidth)) - 1 
   mouse.y = (-2* (event.clientY / innerHeight)) + 1 
-})
+}) 
 generatePlane()
 animate()
